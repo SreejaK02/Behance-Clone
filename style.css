@@ -1,0 +1,571 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(to right, #ff8a00, #e52e71); /* Example gradient background */
+}
+
+.home-link {
+    font-size: larger; 
+    text-decoration: none; 
+    color: inherit;
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    background-image: linear-gradient(to right, #ffa07a, #2d2828);
+    display: inline-block;
+}
+
+
+
+.container {
+    max-width: 80vw;
+    margin: auto;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    list-style: none;
+    
+}
+
+.navbar li {
+    margin: 0 12px;
+    color:white;
+}
+
+.navbar .login {
+    margin-left: auto;
+}
+
+.btn {
+    padding: 7px 12px;
+    border: 2px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    background-color: #0057ff; /* Adjusted to match Behance's button color */
+}
+
+/* Main section styles */
+.section2 {
+    text-align: center;
+    color: white;
+    padding: 4rem 0;
+}
+
+.section2 h1 {
+    font-size: 3rem;
+}
+
+.section2 p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Feature boxes styles */
+.box {
+    padding: 1rem;
+    margin: 1rem;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    border-radius: 10px;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box ul, .box ul li {
+    list-style: none;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Image gallery styles */
+.image-gallery {
+    padding: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+    gap: 2rem;
+}
+
+.image-item {
+    margin-bottom: 2rem;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-description {
+    text-align: center;
+    margin-top: 0.5rem;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Responsive behavior */
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+}
+
+/* Footer styles */
+footer {
+    padding: 23px;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Existing styles... */
+
+/* General Style for section3 */
+/* General Style for section3 */
+.section3 {
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+    border-radius: 15px;
+    margin: 20px 0; /* Add some margin to separate sections */
+}
+
+/* Styling the navbar within section3 */
+.section3 .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px; /* Ensure border-radius applies to the navbar */
+    overflow: hidden; /* Prevents children from overflowing rounded corners */
+}
+
+/* Style for the filter button */
+.section3 .filter button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.section3 .filter button:hover {
+    background-color: #e63946;
+}
+
+/* Style for the search input field */
+.section3 .boom input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    font-size: 0.9rem;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .section3 .navbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .section3 .filter {
+        margin-bottom: 10px;
+    }
+
+    .section3 .boom input[type="text"] {
+        width: auto;
+    }
+}
+
+nav a {
+    text-decoration: none; /* Removes underline from links */
+    color: rgb(244, 16, 8); /* Sets the text color of the link */
+    /* Add more styling as needed */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Adds underline on hover for visual feedback */
+    /* Other hover effects */
+}
+
+/* ... existing styles ... */
+
+/* Style for the job categories section */
+.job-categories {
+    background-color: #f7f5ed;
+    border-radius: 8px;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Style for job category buttons */
+.job-categories button {
+    background-color: #ff8a00;
+    color: rgb(109, 31, 227);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.job-categories button:hover {
+    background-color: #e52e71;
+}
+
+/* Style for job search section */
+.job-search {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.job-search input[type="search"] {
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    margin-right: 1rem;
+    width: 50%;
+}
+
+.job-search button[type="submit"] {
+    background-color: #0057ff;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Style for individual job listings */
+.job {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-radius: 8px;
+    margin: 1rem;
+    padding: 1rem;
+    width: calc(80vw - 2rem); /* Adjust width based on container */
+}
+
+.job h2 {
+    color: #ff8a00;
+}
+
+.job p {
+    color: #333;
+}
+
+.job a {
+    display: inline-block;
+    background-color: #e52e71;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.job a:hover {
+    background-color: #ff8a00;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem; /* Ensure there's space before the footer */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .job-categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .job-search input[type="search"] {
+        width: 80%;
+    }
+
+    .job {
+        width: calc(90vw - 2rem);
+    }
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 2rem 0;
+}
+
+.category-box {
+    background: #ffffff; /* Adjust based on actual design needs */
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.category-box h3 {
+    margin-bottom: 1rem;
+}
+
+/* Responsive adjustments for category boxes */
+@media (max-width: 1024px) {
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .categories {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Discover Page Styles */
+
+.discover-header {
+    text-align: center;
+    padding: 50px 0;
+    color: #ffffff;
+}
+
+.discover-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.discover-header p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.search-bar {
+    /* Additional styling for the search bar */
+}
+
+.discover-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.discover-gallery .project-item {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.discover-gallery .project-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .discover-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .discover-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Discover Page Styles */
+
+.discover-header {
+    text-align: center;
+    padding: 50px 0;
+    color: #ffffff;
+}
+
+.discover-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.discover-header p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.search-bar {
+    /* Additional styling for the search bar */
+}
+
+.discover-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.discover-gallery .project-item {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.discover-gallery .project-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .discover-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .discover-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Additional CSS for "Hire Freelance Designers" page */
+
+.hire-section {
+    text-align: center;
+    padding: 4rem 0;
+    color: white;
+    background-image: url('path-to-background-image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+}
+
+.hire-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hire-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.search-bar {
+    /* Additional styling for the search bar */
+}
+
+.filter-bar {
+    /* Additional styling for filter options */
+}
+
+.freelancer-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 2rem;
+}
+
+.freelancer-gallery .profile-item {
+    /* Style for individual freelancer profiles */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .freelancer-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .freelancer-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Continue with existing styles */
+
+/* Additional CSS for "Browse Assets" page */
+
+.assets-header {
+    text-align: center;
+    padding: 4rem 0;
+    color: white;
+    background-image: url('path-to-assets-header-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.assets-header h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.assets-header p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.search-assets {
+    /* Additional styling for the assets search bar */
+}
+
+.assets-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.assets-grid .asset-item {
+    /* Style for individual asset items */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .assets-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .assets-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Continue with existing styles ... */
+
